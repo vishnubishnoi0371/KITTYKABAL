@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-/* ROOT */
+/*======================= ROOT =======================*/
 :root {
     /* FONT-SIZE */
     --text-lg: 18px;
@@ -32,7 +32,7 @@
     --lh-150: 150%;
 }
 
-/* FONT-FAMILY */
+/*================= FONT-FAMILY =================*/
 .font_bungee {
     font-family: "Bungee Inline", sans-serif;
 
@@ -43,7 +43,7 @@
 
 }
 
-/* FONT-WEIGHT */
+/*================= FONT-WEIGHT =================*/
 .fw_normal {
     font-weight: var(--fw-normal);
 }
@@ -56,7 +56,7 @@
     font-weight: var(--fw-bold);
 }
 
-/* COLORS */
+/*================= COLORS =================*/
 
 .text_white {
     color: var(--white);
@@ -70,7 +70,7 @@
     color: var(--black);
 }
 
-/* LINE-HEIGHT */
+/* ===============LINE-HEIGHT ===============*/
 .lh_110 {
     line-height: var(--lh-110);
 }
@@ -83,7 +83,7 @@
     line-height: var(--lh-120);
 }
 
-/* FONT-SIZE */
+/*================== FONT-SIZE ==================*/
 .text_lg {
     font-size: var(--text-lg);
 }
@@ -144,7 +144,7 @@
     margin-right: auto;
 }
 
-/* HEADER */
+/*======================= HEADER =======================*/
 .hero_bg_img {
     background-image: url('../images/webp/kitty-bg.webp');
     background-position: center;
@@ -163,20 +163,25 @@
     width: 36px;
     height: 36px;
 }
-.relative{
+
+.relative {
     position: relative;
 }
-.z-10{
+
+.z-10 {
     z-index: 10;
 }
-.absolute{
+
+.absolute {
     position: absolute;
 }
-.bg_layer{
+
+.bg_layer {
     top: 0;
     width: 100%;
     height: 435px;
 }
+
 .me_4 {
     margin-inline-end: 4px;
 }
@@ -213,6 +218,7 @@
     padding: 16px 24px;
     border: transparent;
     border-radius: 6px;
+    margin-bottom: 50px;
 }
 
 .start_button:hover {
@@ -229,7 +235,7 @@
     .social_icons_gap {
         gap: 12px;
     }
-    
+
     .main_heading {
         padding-top: 60px;
     }
@@ -238,10 +244,12 @@
         width: 15px;
         height: 15px;
     }
+
     .social_icons {
         width: 28px;
         height: 28px;
     }
+
     .container {
         padding-left: 16px;
         padding-right: 16px;
@@ -249,19 +257,29 @@
 }
 
 @media (max-width: 768px) {
+
     :root {
         --text-lg: 16px;
         --text-xl: 18px !important;
         --text-2xl: 24px;
         --text-5xl: 35px !important;
     }
+
+    .social_icons {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social_icons_size {
+        width: 18px;
+        height: 18px;
+    }
+
     .start_button {
-        background: var(--sky);
         padding: 12px 18px;
-        border: transparent;
-        border-radius: 6px;
     }
 }
+
 @media (max-width: 1024px) {
     :root {
         --text-lg: 18px;
