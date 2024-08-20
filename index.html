@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Primary Meta Tags -->
-    <title>KITTY-KABAL</title>
+    <title>KITTY KABAL</title>
     <meta name="title" content="KITTY-KABAL" />
     <meta name="description" content="I swear there's a cabal that runs this entire space." />
 
@@ -25,6 +25,8 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/images/webp/fav-icon.webp">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 </head>
 
 <body>
@@ -32,7 +34,8 @@
         <div class="min_vh_100 hero_bg_img ">
             <div class="container">
                 <div class="d_flex items_center justify_between nav_spacing">
-                    <a aria-label="Page logo" href="/" class="fw_bold uppercase text_white my_0 font_baloo text_2xl lh_120">KITTY KABAL</a>
+                    <a aria-label="Page logo" href="/"
+                        class="fw_bold uppercase text_white my_0 font_baloo text_2xl lh_120">KITTY KABAL</a>
                     <div class="d_flex items_center social_icons_gap">
                         <a aria-label="Telegran" href="https://telegram.org/" target="_blank"
                             class="d_flex items_center justify_center social_icons common_duration"><svg
@@ -82,20 +85,38 @@
                     </div>
                 </div>
                 <div class="d_flex items_center justify_center flex_col">
-                    <h1 class="font_bungee fw_normal text_5xl uppercase mx_auto text_white text_center lh_110 main_heading">
-                        I swear there's a cabal that runs this <span class="text_sky"> entire space</span>.
+                    <h1
+                        class="font_bungee fw_normal text_5xl uppercase mx_auto text_white text_center lh_110 main_heading">
+                        <span class="animate-heading">I swear there's a cabal that runs this</span>
+                        <span class="animate-heading text_sky">entire space</span>.
                     </h1>
-                    <p class="font_baloo text_lg text_white text_center lh_150 mx_auto sub_heading">Consequat est
-                        ultricies
-                        lacus et pretium turpised aenean morbi purus at elit rhoncus ultrices
-                        nunc. Blandit est amet consectetur nec quirsus neque urna iaculis placerat vulputate.</p>
+                    <p class="font_baloo text_lg text_white text_center lh_150 mx_auto sub_heading">
+                        <span class="animate-heading">Consequat est ultricies lacus et pretium turpised aenean morbi purus
+                            at elit rhoncus ultrices nunc.</span>
+                        <span class="animate-heading">Blandit est amet consectetur nec quirsus neque urna iaculis placerat
+                            vulputate.</span>
+                    </p>
                     <button
-                        class="start_button cursor_pointer fw_semibold common_duration d_flex text_xl text_black lh_150 font_baloo text_center justify_center items_center">Get
-                        Started</button>
+                        class="start_button cursor_pointer fw_semibold common_duration d_flex text_xl text_black lh_150 font_baloo text_center justify_center items_center ">
+                        Get Started
+                    </button>
                 </div>
+
             </div>
         </div>
     </header>
+    <script>
+        window.onload = function () {
+            gsap.from(".animate-heading", {
+                opacity: 0,
+                y: 10,
+                duration: 3,
+                stagger: 0.5, 
+                ease: "power2.out",
+                repeat: 0, 
+            });
+        };
+    </script>
 </body>
 
 </html>
