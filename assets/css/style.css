@@ -107,7 +107,9 @@
 .d_flex {
     display: flex;
 }
-
+.uppercase{
+    text-transform: uppercase;
+}
 .items_center {
     align-items: center;
 }
@@ -182,7 +184,7 @@
     height: 435px;
 }
 
-.me_4 {
+.me_icon {
     margin-inline-end: 4px;
 }
 
@@ -264,7 +266,10 @@
         --text-2xl: 24px;
         --text-5xl: 35px !important;
     }
-
+    .me_icon {
+        margin-inline-end: 2px;
+    }
+    
     .social_icons {
         width: 30px;
         height: 30px;
@@ -287,4 +292,8 @@
         --text-2xl: 28px;
         --text-5xl: 42px;
     }
+    .sub_heading {
+        margin: 20px 0px 30px 0px;
+    }
+    
 }
