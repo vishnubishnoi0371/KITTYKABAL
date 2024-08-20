@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Bungee+Inline&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
 }
+
 /* ROOT */
 :root {
     /* FONT-SIZE */
@@ -83,19 +85,19 @@
 
 /* FONT-SIZE */
 .text_lg {
-    font-size: 18px;
+    font-size: var(--text-lg);
 }
 
 .text_xl {
-    font-size: 20px;
+    font-size: var(--text-xl);
 }
 
 .text_2xl {
-    font-size: 32px;
+    font-size: var(--text-2xl);
 }
 
 .text_5xl {
-    font-size: 55px;
+    font-size: var(--text-5xl);
 }
 
 .min_vh_100 {
@@ -129,9 +131,11 @@
 .common_duration {
     transition: all 400ms linear;
 }
-.cursor_pointer{
+
+.cursor_pointer {
     cursor: pointer;
 }
+
 .container {
     max-width: 1140px;
     padding-left: 12px;
@@ -146,22 +150,41 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
-.social_icons:hover{
+
+.social_icons:hover {
     box-shadow: 0px 5px 10px 0px var(--sky);
 }
-.social_icons{
+
+.social_icons {
     border: .8px solid var(--white);
     border-radius: 100%;
     width: 36px;
     height: 36px;
 }
-.me_4{
+.relative{
+    position: relative;
+}
+.z-10{
+    z-index: 10;
+}
+.absolute{
+    position: absolute;
+}
+.bg_layer{
+    top: 0;
+    width: 100%;
+    height: 435px;
+}
+.me_4 {
     margin-inline-end: 4px;
 }
-.social_icons_gap{
+
+.social_icons_gap {
     gap: 16px;
 }
+
 .nav_spacing {
     padding: 21px 0;
 }
@@ -195,4 +218,55 @@
 .start_button:hover {
     background: var(--white);
     box-shadow: 0px 5px 10px 0px var(--sky);
+}
+
+.social_icons_size {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 576px) {
+    .social_icons_gap {
+        gap: 12px;
+    }
+    
+    .main_heading {
+        padding-top: 60px;
+    }
+
+    .social_icons_size {
+        width: 15px;
+        height: 15px;
+    }
+    .social_icons {
+        width: 28px;
+        height: 28px;
+    }
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --text-lg: 16px;
+        --text-xl: 18px !important;
+        --text-2xl: 24px;
+        --text-5xl: 35px !important;
+    }
+    .start_button {
+        background: var(--sky);
+        padding: 12px 18px;
+        border: transparent;
+        border-radius: 6px;
+    }
+}
+@media (max-width: 1024px) {
+    :root {
+        --text-lg: 18px;
+        --text-xl: 20px;
+        --text-2xl: 28px;
+        --text-5xl: 42px;
+    }
 }
