@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Bungee+Inline&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+/* ROOT */
+:root {
+    /* FONT-SIZE */
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-2xl: 32px;
+    --text-5xl: 55px;
+
+    /* FONT-WEIGHT */
+    --fw-normal: 400;
+    --fw-seminold: 600;
+    --fw-bold: 700;
+
+    /* COLORS */
+    --black: #000;
+    --white: #fff;
+    --sky: #00C2FF;
+
+    /* LINE-HEIGHT */
+    --lh-110: 110%;
+    --lh-120: 120%;
+    --lh-150: 150%;
+}
+
+/* FONT-FAMILY */
+.font_bungee {
+    font-family: "Bungee Inline", sans-serif;
+
+}
+
+.font_baloo {
+    font-family: "Baloo Thambi 2", system-ui;
+
+}
+
+/* FONT-WEIGHT */
+.fw_normal {
+    font-weight: var(--fw-normal);
+}
+
+.fw_bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw_semibold {
+    font-weight: var(--fw-bold);
+}
+
+/* COLORS */
+
+.text_white {
+    color: var(--white);
+}
+
+.text_sky {
+    color: var(--sky);
+}
+
+.text_black {
+    color: var(--black);
+}
+
+/* LINE-HEIGHT */
+.lh_110 {
+    line-height: var(--lh-110);
+}
+
+.lh_150 {
+    line-height: var(--lh-150);
+}
+
+.lh_120 {
+    line-height: var(--lh-120);
+}
+
+/* FONT-SIZE */
+.text_lg {
+    font-size: 18px;
+}
+
+.text_xl {
+    font-size: 20px;
+}
+
+.text_2xl {
+    font-size: 32px;
+}
+
+.text_5xl {
+    font-size: 55px;
+}
+
+.min_vh_100 {
+    min-height: 100vh;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.items_center {
+    align-items: center;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.justify_between {
+    justify-content: space-between;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.flex_col {
+    flex-direction: column;
+}
+
+.common_duration {
+    transition: all 400ms linear;
+}
+.cursor_pointer{
+    cursor: pointer;
+}
+.container {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+.hero_bg_img {
+    background-image: url('../images/webp/kitty-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.social_icons:hover{
+    box-shadow: 0px 5px 10px 0px var(--sky);
+}
+.social_icons{
+    border: .8px solid var(--white);
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+}
+.me_4{
+    margin-inline-end: 4px;
+}
+.social_icons_gap{
+    gap: 16px;
+}
+.nav_spacing {
+    padding: 21px 0;
+}
+
+.my_0 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.mx_auto {
+    margin: 0 auto;
+}
+
+.main_heading {
+    padding-top: 100px;
+    max-width: 930px;
+}
+
+.sub_heading {
+    max-width: 730px;
+    margin: 25px 0px 40px 0px;
+}
+
+.start_button {
+    background: var(--sky);
+    padding: 16px 24px;
+    border: transparent;
+    border-radius: 6px;
+}
+
+.start_button:hover {
+    background: var(--white);
+    box-shadow: 0px 5px 10px 0px var(--sky);
+}
