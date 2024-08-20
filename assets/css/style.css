@@ -164,7 +164,7 @@
     border-radius: 100%;
     width: 36px;
     height: 36px;
-}
+    box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.7);}
 
 .me_icon {
     margin-inline-end: 4px;
